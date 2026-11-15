@@ -1,0 +1,32 @@
+{
+  "channels": {
+    "stable": {
+      "version": "2026.11.0",
+      "build_number": 2611000,
+      "release_date": "2026-11-15",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.0",
+      "windows": {
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Setup-v2026.11.0.exe",
+        "sha256": ""
+      },
+      "android": {
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Android-arm64-v2026.11.0.apk",
+        "sha256": ""
+      }
+    },
+    "beta": {
+      "version": "2026.11.15-beta.1",
+      "build_number": 26111501,
+      "release_date": "2026-11-15",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.15-beta.1",
+      "windows": {
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15-beta.1/Mizuki-Setup-v2026.11.15-beta.1.exe",
+        "sha256": ""
+      },
+      "android": {
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15-beta.1/Mizuki-Android-arm64-v2026.11.15-beta.1.apk",
+        "sha256": ""
+      }
+    }
+  }
+}
