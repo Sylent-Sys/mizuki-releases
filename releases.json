@@ -2,16 +2,24 @@
   "channels": {
     "stable": {
       "version": "2026.11.0",
-      "build_number": 2611000,
+      "build_number": 26111523,
       "release_date": "2026-11-15",
       "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.0",
+      "notes": [
+        "CalVer dual-channel release pipeline with Inno Setup Windows installer and portable archive",
+        "In-app auto-updater in Settings with Stable and Beta channel switching, SHA-256 verification, and update modal",
+        "Direct Android arm64 APK package installer intent integration and FileProvider handoff",
+        "Bundled Rust mizuki_core engine for instant media streaming, encrypted DoH resolution, and Debrid acceleration"
+      ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Setup-v2026.11.0.exe",
-        "sha256": ""
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Setup-2026.11.0.exe",
+        "sha256": "e65a1d3629db5e009a04aef56e1424c1d6f8cb718cadf4ac6c795ae978280540",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Windows-x64-2026.11.0.zip",
+        "portable_sha256": "63d0b39e966ccfa81661064a593f7f9acd8ed27474c2d8b8098870cf774ac97c"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Android-arm64-v2026.11.0.apk",
-        "sha256": ""
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.0/Mizuki-Android-arm64-2026.11.0.apk",
+        "sha256": "8d8e31cb4cec94ac4f04657780d9fe4120dcb05c36c1609ebe09c72d53645b61"
       }
     },
     "beta": {
