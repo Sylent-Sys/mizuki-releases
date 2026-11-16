@@ -2,6 +2,20 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.3 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111618
+
+## Added
+- **Mizuki Design System 1.0:** Unified typography, responsive paddings, rounded borders, and standardized UI components (`MizukiBadge`, `MizukiButton`, `MizukiCard`, `MizukiDialog`) across Adaptive Shell, Airing Calendar, Settings, and Torrent Client screens.
+- **Theme Consistency & Contrast:** Polished color token mappings and improved readability across all 4 built-in palettes (Blackout OLED, Whiteout, Catppuccin, and Dracula).
+
+## Fixed
+- **Windows Exit Freeze & Deadlock Prevention:** Resolved triple-deadlock race condition during video player teardown on Windows by making player destruction asynchronous, properly detaching event listeners, and ensuring clean tray controller shutdown.
+
+## Changed & Improved
+- **Player Diagnostics & Lifecycle:** Added safe lifecycle disposal boundaries for `media_kit` libmpv texture controllers on desktop to guarantee instant, clean application exit without background hangs.
+
 ## v2026.11.2 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111610

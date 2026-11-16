@@ -1,33 +1,35 @@
-# Mizuki v2026.11.2 (Stable)
+# Mizuki v2026.11.3 (Stable)
 
-Released: 2026-11-16 | Build: 26111610
+Released: 2026-11-16 | Build: 26111618
 
 ## Added
-- **Android Split-per-ABI APK Distribution:** Releases are now packaged and distributed into dedicated architecture APKs (`arm64-v8a`, `armeabi-v7a`, `x86_64`), reducing download sizes to ~42–54 MB (down from ~92 MB monolithic APK).
-- **In-App Architecture Detection for Auto-Updater:** Enhanced `UpdateChecker` on Android to query device CPU ABIs (`supportedAbis`) and automatically download the optimal native APK package for the user's device architecture.
+- **Mizuki Design System 1.0:** Unified typography, responsive paddings, rounded borders, and standardized UI components (`MizukiBadge`, `MizukiButton`, `MizukiCard`, `MizukiDialog`) across Adaptive Shell, Airing Calendar, Settings, and Torrent Client screens.
+- **Theme Consistency & Contrast:** Polished color token mappings and improved readability across all 4 built-in palettes (Blackout OLED, Whiteout, Catppuccin, and Dracula).
+
+## Fixed
+- **Windows Exit Freeze & Deadlock Prevention:** Resolved triple-deadlock race condition during video player teardown on Windows by making player destruction asynchronous, properly detaching event listeners, and ensuring clean tray controller shutdown.
 
 ## Changed & Improved
-- **Build Artifact Hygiene & Pruning:** Automated cleanup of stale build outputs (`dist/`, `jniLibs/`, and intermediate Flutter outputs) prior to packaging to ensure clean, reproducible distribution bundles.
-- **Multi-ABI Checksum Manifest:** Updated `releases.json` schema to include structured multi-ABI checksums and direct download endpoints for all Android architectures.
+- **Player Diagnostics & Lifecycle:** Added safe lifecycle disposal boundaries for `media_kit` libmpv texture controllers on desktop to guarantee instant, clean application exit without background hangs.
 
 ---
 
 ## Downloads & SHA-256 Checksums
 
 ### Windows (64-bit)
-- **Installer:** [Mizuki-Setup-2026.11.2.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.2/Mizuki-Setup-2026.11.2.exe) (~32.1 MB)
-  - `sha256: 838222477d6d0b99d91066007e2b746367f37749838756a33b48fc65575be9bf`
-  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 838222477d6d0b99d91066007e2b746367f37749838756a33b48fc65575be9bf`)
-- **Portable Archive:** [Mizuki-Windows-x64-2026.11.2.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.2/Mizuki-Windows-x64-2026.11.2.zip) (~43.4 MB)
-  - `sha256: 541db49c65c747105978f50be9f16923e124353a4d1e5d09ba2358adf052ea38`
+- **Installer:** [Mizuki-Setup-2026.11.3.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.3/Mizuki-Setup-2026.11.3.exe) (~32.1 MB)
+  - `sha256: 401aa713a69a88358f89ed37dd4c0fac9b959d314cbca1571e0aa3c2f6b5d3d7`
+  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 401aa713a69a88358f89ed37dd4c0fac9b959d314cbca1571e0aa3c2f6b5d3d7`)
+- **Portable Archive:** [Mizuki-Windows-x64-2026.11.3.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.3/Mizuki-Windows-x64-2026.11.3.zip) (~43.4 MB)
+  - `sha256: f33272c40c4fdcf449f8bacea91039fcfd682391a2a1ac051bdf8e8bba07577d`
 
 ### Android (Split per ABI / Android 10+)
-- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.2.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.2/Mizuki-Android-arm64-v8a-2026.11.2.apk) (~48.9 MB)
-  - `sha256: ca87e04f5e66f473185798e2c6786c3543fe93978d5e80b4f74b676436d57b7a`
-- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.2.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.2/Mizuki-Android-armeabi-v7a-2026.11.2.apk) (~42.2 MB)
-  - `sha256: f61890c350658a474f8292e98c7b94305272813e2939487fa83fc7a604f4b93e`
-- **x86_64:** [Mizuki-Android-x86_64-2026.11.2.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.2/Mizuki-Android-x86_64-2026.11.2.apk) (~54.8 MB)
-  - `sha256: 660d856a6c4894bfa2a55d1d52c6f231545bfaf1f1246d505a747b3cf97f4834`
+- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.3.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.3/Mizuki-Android-arm64-v8a-2026.11.3.apk) (~48.9 MB)
+  - `sha256: ffb202ebd4f4d57e50935a7c5ad5bb282beb30bc9c852dfbbba1d537484c7355`
+- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.3.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.3/Mizuki-Android-armeabi-v7a-2026.11.3.apk) (~42.3 MB)
+  - `sha256: ae15ff153ae99d0b02a35071bf457fbd6fb3231bb672ec572c2f3e45c32c3416`
+- **x86_64:** [Mizuki-Android-x86_64-2026.11.3.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.3/Mizuki-Android-x86_64-2026.11.3.apk) (~54.8 MB)
+  - `sha256: f3cdde13da3b5d49375e3752a9f4c81191d6d567491aa14b2fb1caf03f1952ac`
 
 ---
 
