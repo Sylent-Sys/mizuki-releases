@@ -2,6 +2,18 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.4 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111619
+
+## Fixed
+- **In-App Auto-Updater (Android Split-per-ABI):** Memperbaiki evaluasi pembaruan aplikasi agar selalu memprioritaskan versi CalVer di atas nomor build internal Gradle. Pengguna Android arsitektur `arm64-v8a` kini menerima tawaran pembaruan secara andal tanpa terhalang offset ABI.
+- **Penyimpanan Android (Scoped Storage & Direct I/O):** Menambahkan deklarasi izin `MANAGE_EXTERNAL_STORAGE` untuk direktori unduhan kustom dan mengalihkan penyimpanan default ke app-specific external storage (`/Android/data/com.sylentsys.mizuki.app/files/torrents`). Menghilangkan kendala POSIX `EPERM (os error 1)` saat penulisan berkas media oleh engine Rust.
+
+## Changed & Improved
+- **Pengaturan & Setup Wizard:** Menambahkan konfirmasi dan permintaan izin runtime penyimpanan saat memilih direktori unduhan kustom di luar sandbox Android.
+- **Stabilitas Engine Streaming:** Peningkatan keandalan inisialisasi media storage engine Rust pada platform Android 11+.
+
 ## v2026.11.3 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111618
