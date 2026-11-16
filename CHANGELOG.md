@@ -2,6 +2,19 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.1 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111608
+
+## Added
+- **In-App QRIS Checkout & Dynamic Pricing Catalog:** Added dynamic Silver and Gold membership packages with an interactive in-app QRIS payment dialog featuring live countdown, automatic payment verification, QR PNG export, and instant license activation.
+
+## Fixed
+- **Android ASS/SSA Subtitle Font Rendering:** Bundled `DroidSansFallback.ttf` for Android `libass` playback so stylized and fallback subtitle characters render cleanly on mobile devices.
+
+## Changed & Improved
+- **Player Diagnostics & Release Pipeline:** Restricted verbose libmpv/libass font logs to debug builds and improved release changelog formatting consistency.
+
 ## v2026.11.0 (2026-11-15) - Stable
 
 Released: 2026-11-15 | Build: 26111523
