@@ -2,6 +2,16 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.1 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111608
+
+### Added
+- **In-App QRIS Checkout & Dynamic Plans:** Added Silver and Gold membership plans with an interactive in-app QRIS payment dialog featuring a live countdown timer, automatic payment verification, QR image export, and instant activation.
+
+### Fixed
+- **Android Subtitle Font Rendering:** Bundled a fallback subtitle font on Android so stylized ASS/SSA subtitles and non-Latin characters display properly on mobile devices.
+
 ## v2026.11.0 (2026-11-15) - Stable
 
 Released: 2026-11-15 | Build: 26111523
