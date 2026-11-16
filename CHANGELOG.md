@@ -7,12 +7,12 @@ All notable user-facing changes to Mizuki will be documented in this file.
 Released: 2026-11-16 | Build: 26111619
 
 ## Fixed
-- **In-App Auto-Updater (Android Split-per-ABI):** Memperbaiki evaluasi pembaruan aplikasi agar selalu memprioritaskan versi CalVer di atas nomor build internal Gradle. Pengguna Android arsitektur `arm64-v8a` kini menerima tawaran pembaruan secara andal tanpa terhalang offset ABI.
-- **Penyimpanan Android (Scoped Storage & Direct I/O):** Menambahkan deklarasi izin `MANAGE_EXTERNAL_STORAGE` untuk direktori unduhan kustom dan mengalihkan penyimpanan default ke app-specific external storage (`/Android/data/com.sylentsys.mizuki.app/files/torrents`). Menghilangkan kendala POSIX `EPERM (os error 1)` saat penulisan berkas media oleh engine Rust.
+- **In-App Auto-Updater (Android Split-per-ABI):** Fixed update evaluation logic to prioritize CalVer comparison over internal build numbers, ensuring Android `arm64-v8a` devices correctly receive release updates despite Gradle ABI offsets.
+- **Android Scoped Storage (POSIX Direct I/O):** Added `MANAGE_EXTERNAL_STORAGE` declaration and redirected default storage to app-specific external storage (`/Android/data/com.sylentsys.mizuki.app/files/torrents`), resolving POSIX `EPERM (os error 1)` file write errors in the Rust media engine.
 
 ## Changed & Improved
-- **Pengaturan & Setup Wizard:** Menambahkan konfirmasi dan permintaan izin runtime penyimpanan saat memilih direktori unduhan kustom di luar sandbox Android.
-- **Stabilitas Engine Streaming:** Peningkatan keandalan inisialisasi media storage engine Rust pada platform Android 11+.
+- **Storage Diagnostics & Runtime Permissions:** Added runtime storage permission prompts in Settings and Setup Wizard when selecting custom download locations outside the Android app sandbox.
+- **Media Engine Resilience:** Hardened storage directory initialization on Android 11+ to ensure uninterrupted torrent streaming and downloads.
 
 ## v2026.11.3 (2026-11-16) - Stable
 
