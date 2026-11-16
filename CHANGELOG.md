@@ -2,6 +2,14 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.2 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111610
+
+### Added
+- **Smaller Per-Device Android Downloads:** Android releases are now packaged separately by device architecture (`arm64-v8a`, `armeabi-v7a`, and `x86_64`), cutting typical download sizes nearly in half (~42–55 MB instead of ~92 MB).
+- **Automatic Device Architecture Detection:** The in-app updater on Android now automatically detects your device architecture and downloads the right APK package for your phone or tablet.
+
 ## v2026.11.1 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111608
