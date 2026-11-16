@@ -2,6 +2,20 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.3 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111618
+
+### Added
+- **Refreshed Unified Interface:** Introduced consistent typography, responsive spacing, and unified badges, buttons, cards, and dialogs across navigation, Airing Calendar, Settings, and Transfers screens.
+- **Improved Theme Contrast:** Refined color contrast and text readability across all four built-in themes (Blackout OLED, Whiteout, Catppuccin, and Dracula).
+
+### Changed & Improved
+- **Cleaner Desktop Player Shutdown:** Hardened video player cleanup when closing desktop windows so the app exits cleanly without leaving background processes behind.
+
+### Fixed
+- **Windows Exit Freeze:** Fixed a freeze that could occur when closing Mizuki on Windows while a video player or system tray session was active.
+
 ## v2026.11.2 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111610
