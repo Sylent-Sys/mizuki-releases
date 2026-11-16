@@ -2,6 +2,18 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.4 (2026-11-16) - Stable
+
+Released: 2026-11-16 | Build: 26111619
+
+### Changed & Improved
+- **Guided Custom Folder Permissions:** Added runtime storage permission prompts in Settings and the Setup Wizard when choosing a custom download location on Android.
+- **More Reliable Android 11+ Storage Setup:** Strengthened storage directory initialization on Android 11 and newer for uninterrupted streaming and downloads.
+
+### Fixed
+- **Android Update Detection:** Fixed an issue where some Android devices failed to detect newly published app updates.
+- **Android Storage Write Errors:** Added full storage access support for custom folders and switched the default download folder to a safe app-owned storage directory on Android 11+, eliminating file write permission errors during playback.
+
 ## v2026.11.3 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111618
