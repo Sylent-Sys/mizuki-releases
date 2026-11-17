@@ -2,6 +2,24 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.5 (2026-11-17) - Stable
+
+Released: 2026-11-17 | Build: 26111716
+
+### Added
+- **Streamlined Collapsible Settings:** Redesigned the Settings screen with collapsible sections and category filters so options are easier to scan and understand.
+- **Live Concurrent Source Search:** Add-on searches now run in parallel with live incoming results, a real-time progress counter (`X/Y finished · N found`), and an instant cancel button.
+
+### Changed & Improved
+- **Improved QRIS Payment Experience:** Refined bank and e-wallet branding and added platform-aware actions ("Save to Gallery" on Android and "Copy QR Code" on Windows).
+- **Consistent UI Corner Styling:** Standardized corner rounding across text inputs, buttons, and segmented controls for a more cohesive look.
+
+### Fixed
+- **Protected User Add-ons Across Updates:** Moved user-installed media source plugins out of the temporary streaming cache into dedicated persistent storage with automatic migration, preventing add-ons from disappearing across updates.
+- **Seamless In-Place Android Updates:** Switched production Android releases to a consistent app signature so future updates install directly over existing installations without requiring an uninstall.
+- **Safer Windows Uninstaller:** Scoped Windows cleanup to temporary streaming cache files so user-installed add-ons and preferences remain safe.
+- **Complete Android Subtitle Font Support:** Replaced the bundled Android subtitle fallback font with a broader Unicode typeface, eliminating missing-character boxes (tofu) on stylized subtitles.
+
 ## v2026.11.4 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111619
