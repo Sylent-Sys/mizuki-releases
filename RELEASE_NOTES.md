@@ -1,33 +1,39 @@
-# Mizuki v2026.11.4 (Stable)
+# Mizuki v2026.11.5 (Stable)
 
-Released: 2026-11-16 | Build: 26111619
+Released: 2026-11-17 | Build: 26111716
+
+## Added
+- **Progressive Disclosure Settings:** Settings screen now features expandable/collapsible sections and category filters to reduce cognitive load, prioritizing user benefits over technical implementation jargon.
+- **Concurrent Source Search & Live Streaming:** Media source plugin searching now runs concurrently with real-time streaming results, an honest progress indicator (`X/Y finished · N found`), and a responsive cancel button.
 
 ## Fixed
-- **In-App Auto-Updater (Android Split-per-ABI):** Fixed update evaluation logic to prioritize CalVer comparison over internal build numbers, ensuring Android `arm64-v8a` devices correctly receive release updates despite Gradle ABI offsets.
-- **Android Scoped Storage (POSIX Direct I/O):** Added `MANAGE_EXTERNAL_STORAGE` declaration and redirected default storage to app-specific external storage (`/Android/data/com.sylentsys.mizuki.app/files/torrents`), resolving POSIX `EPERM (os error 1)` file write errors in the Rust media engine.
+- **Plugin Persistence & Migration (Data Loss Prevention):** Decoupled media source plugin storage from disposable streaming cache (`torrents`) into dedicated persistent app storage, with idempotent migration on startup to prevent plugins from disappearing across updates.
+- **Android In-Place Update Support:** Configured a persistent release signing key for production Android APK builds to prevent signature mismatches and forced uninstalls during updates.
+- **Windows Uninstaller Data Safety:** Scoped Inno Setup uninstaller rules to purge only temporary streaming cache files, preserving user-installed plugins and configuration.
+- **Android Subtitle Font Rendering:** Updated libass fallback font configuration with a unified OFL-licensed typeface, eliminating tofu/missing glyph boxes on complex subtitle tracks.
 
 ## Changed & Improved
-- **Storage Diagnostics & Runtime Permissions:** Added runtime storage permission prompts in Settings and Setup Wizard when selecting custom download locations outside the Android app sandbox.
-- **Media Engine Resilience:** Hardened storage directory initialization on Android 11+ to ensure uninterrupted torrent streaming and downloads.
+- **QRIS Payment Experience:** Refined banking and e-wallet brand presentation and added platform-aware actions ("Save to Gallery" on Android/iOS, "Copy QR Code" on Windows Desktop).
+- **Design System Consistency (MDS 1.0):** Standardized input fields, buttons, and segmented controls to a uniform 10px corner radius (`MizukiRadius.md`).
 
 ---
 
 ## Downloads & SHA-256 Checksums
 
 ### Windows (64-bit)
-- **Installer:** [Mizuki-Setup-2026.11.4.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Setup-2026.11.4.exe) (~32.1 MB)
-  - `sha256: 14f7a4177afe90392dae51d88cf5869db81f773f4d0032098a9121141b9fce13`
-  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 14f7a4177afe90392dae51d88cf5869db81f773f4d0032098a9121141b9fce13`)
-- **Portable Archive:** [Mizuki-Windows-x64-2026.11.4.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Windows-x64-2026.11.4.zip) (~43.4 MB)
-  - `sha256: 3bdf79d56db8e79ff0baedf46f36b3d0391f30820bc33b0f9508c2601c20085f`
+- **Installer:** [Mizuki-Setup-2026.11.5.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Setup-2026.11.5.exe) (~32.9 MB)
+  - `sha256: 4f4424a6df7f87a51e43860387a0f86f50d10b9d4e87559d964510e701eea6a5`
+  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 4f4424a6df7f87a51e43860387a0f86f50d10b9d4e87559d964510e701eea6a5`)
+- **Portable Archive:** [Mizuki-Windows-x64-2026.11.5.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Windows-x64-2026.11.5.zip) (~44.6 MB)
+  - `sha256: cd119c5e7b879e4812d03f6ffba9c1ba8bf8a799f05b0efa406e2236ae119000`
 
 ### Android (Split per ABI / Android 10+)
-- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.4.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-arm64-v8a-2026.11.4.apk) (~48.9 MB)
-  - `sha256: 0f800d91083a43b3e418f0b38318c616c65b8da1fbc84c482a6d3e3fddf47436`
-- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.4.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-armeabi-v7a-2026.11.4.apk) (~42.3 MB)
-  - `sha256: 9ee5a5c942cd5b390f37f473875b7915c89194a06ecb00bce7629b7ca9a2eee0`
-- **x86_64:** [Mizuki-Android-x86_64-2026.11.4.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-x86_64-2026.11.4.apk) (~54.8 MB)
-  - `sha256: 0705f8cd04d7011d2f6e7e8d65094b355a23acfd3137f614a507aa4d4f112bdd`
+- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.5.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk) (~50.2 MB)
+  - `sha256: 78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556`
+- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.5.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-armeabi-v7a-2026.11.5.apk) (~43.5 MB)
+  - `sha256: c0ffd40053fdf098fb9c5b31bff4f08a62b1d4a529f2c0a7493040541f186625`
+- **x86_64:** [Mizuki-Android-x86_64-2026.11.5.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-x86_64-2026.11.5.apk) (~56 MB)
+  - `sha256: 76358e0f2d59b2e1d5614be937ce23f29cb52bc47aff7ef9ad15e8aed7890f48`
 
 ---
 

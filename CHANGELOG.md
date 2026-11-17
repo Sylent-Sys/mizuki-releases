@@ -2,6 +2,24 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.5 (2026-11-17) - Stable
+
+Released: 2026-11-17 | Build: 26111716
+
+## Added
+- **Progressive Disclosure Settings:** Settings screen now features expandable/collapsible sections and category filters to reduce cognitive load, prioritizing user benefits over technical implementation jargon.
+- **Concurrent Source Search & Live Streaming:** Media source plugin searching now runs concurrently with real-time streaming results, an honest progress indicator (`X/Y finished · N found`), and a responsive cancel button.
+
+## Fixed
+- **Plugin Persistence & Migration (Data Loss Prevention):** Decoupled media source plugin storage from disposable streaming cache (`torrents`) into dedicated persistent app storage, with idempotent migration on startup to prevent plugins from disappearing across updates.
+- **Android In-Place Update Support:** Configured a persistent release signing key for production Android APK builds to prevent signature mismatches and forced uninstalls during updates.
+- **Windows Uninstaller Data Safety:** Scoped Inno Setup uninstaller rules to purge only temporary streaming cache files, preserving user-installed plugins and configuration.
+- **Android Subtitle Font Rendering:** Updated libass fallback font configuration with a unified OFL-licensed typeface, eliminating tofu/missing glyph boxes on complex subtitle tracks.
+
+## Changed & Improved
+- **QRIS Payment Experience:** Refined banking and e-wallet brand presentation and added platform-aware actions ("Save to Gallery" on Android/iOS, "Copy QR Code" on Windows Desktop).
+- **Design System Consistency (MDS 1.0):** Standardized input fields, buttons, and segmented controls to a uniform 10px corner radius (`MizukiRadius.md`).
+
 ## v2026.11.4 (2026-11-16) - Stable
 
 Released: 2026-11-16 | Build: 26111619

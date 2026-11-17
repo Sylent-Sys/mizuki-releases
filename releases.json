@@ -1,10 +1,10 @@
 {
   "channels": {
     "stable": {
-      "version": "2026.11.4",
-      "build_number": 26111619,
-      "release_date": "2026-11-16",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.4",
+      "version": "2026.11.5",
+      "build_number": 26111716,
+      "release_date": "2026-11-17",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.5",
       "notes": [
         "CalVer dual-channel release pipeline with Inno Setup Windows installer and portable archive",
         "In-app auto-updater in Settings with Stable and Beta channel switching, SHA-256 verification, and update modal",
@@ -12,26 +12,26 @@
         "Bundled Rust mizuki_core engine for instant media streaming, encrypted DoH resolution, and Debrid acceleration"
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Setup-2026.11.4.exe",
-        "sha256": "14f7a4177afe90392dae51d88cf5869db81f773f4d0032098a9121141b9fce13",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Windows-x64-2026.11.4.zip",
-        "portable_sha256": "3bdf79d56db8e79ff0baedf46f36b3d0391f30820bc33b0f9508c2601c20085f"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Setup-2026.11.5.exe",
+        "sha256": "4f4424a6df7f87a51e43860387a0f86f50d10b9d4e87559d964510e701eea6a5",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Windows-x64-2026.11.5.zip",
+        "portable_sha256": "cd119c5e7b879e4812d03f6ffba9c1ba8bf8a799f05b0efa406e2236ae119000"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-arm64-v8a-2026.11.4.apk",
-        "sha256": "0f800d91083a43b3e418f0b38318c616c65b8da1fbc84c482a6d3e3fddf47436",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
+        "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-arm64-v8a-2026.11.4.apk",
-            "sha256": "0f800d91083a43b3e418f0b38318c616c65b8da1fbc84c482a6d3e3fddf47436"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
+            "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-armeabi-v7a-2026.11.4.apk",
-            "sha256": "9ee5a5c942cd5b390f37f473875b7915c89194a06ecb00bce7629b7ca9a2eee0"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-armeabi-v7a-2026.11.5.apk",
+            "sha256": "c0ffd40053fdf098fb9c5b31bff4f08a62b1d4a529f2c0a7493040541f186625"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.4/Mizuki-Android-x86_64-2026.11.4.apk",
-            "sha256": "0705f8cd04d7011d2f6e7e8d65094b355a23acfd3137f614a507aa4d4f112bdd"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-x86_64-2026.11.5.apk",
+            "sha256": "76358e0f2d59b2e1d5614be937ce23f29cb52bc47aff7ef9ad15e8aed7890f48"
           }
         }
       }
