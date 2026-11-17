@@ -2,6 +2,21 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.6 (2026-11-18) - Stable
+
+Released: 2026-11-18 | Build: 26111800
+
+## Added
+- **Subscription Checkout Details Card:** Added a dedicated transaction details card beneath the checkout QR view, showing the order reference, plan name, tax itemization, and service fee in a clean dark slate container.
+
+## Fixed
+- **Choice Chip Duration Selection Reflow:** Disabled active checkmark indicator on subscription duration chips (`showCheckmark: false`) in ProScreen to prevent unintended text shift and layout reflow.
+- **Order Verification Settlement Matching:** Refined backend verification matching to ensure seamless transaction status updates upon confirmation.
+
+## Changed & Improved
+- **Checkout Modal UI Polish:** Polished dark slate layout spacing, typography hierarchy, and platform-specific action button alignment.
+- **Release Manifest Consistency:** Streamlined automated release packaging and bullet-point parsing for in-app updater manifests across stable update channels.
+
 ## v2026.11.5 (2026-11-17) - Stable
 
 Released: 2026-11-17 | Build: 26111716
