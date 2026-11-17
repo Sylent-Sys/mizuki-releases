@@ -2,6 +2,20 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.6 (2026-11-18) - Stable
+
+Released: 2026-11-18 | Build: 26111800
+
+### Added
+- **Subscription Checkout Details Card:** Added a transaction summary card beneath the checkout QR view displaying your order reference, selected plan, tax breakdown, and service fee in a clean dark container.
+
+### Changed & Improved
+- **Checkout Modal Polish:** Refined spacing, typography hierarchy, and platform-specific action button alignment inside the checkout dialog.
+
+### Fixed
+- **Duration Selector Layout Shift:** Fixed subscription duration buttons shifting width and reflowing when selected on the PRO screen.
+- **Reliable Payment Confirmation:** Improved automatic order verification so completed QRIS payments activate more consistently.
+
 ## v2026.11.5 (2026-11-17) - Stable
 
 Released: 2026-11-17 | Build: 26111716

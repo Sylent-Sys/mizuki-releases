@@ -1,81 +1,73 @@
 {
   "channels": {
     "stable": {
-      "version": "2026.11.5",
-      "build_number": 26111716,
-      "release_date": "2026-11-17",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.5",
+      "version": "2026.11.6",
+      "build_number": 26111800,
+      "release_date": "2026-11-18",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.6",
       "notes": [
-        "Streamlined Collapsible Settings: Redesigned the Settings screen with collapsible sections and category filters so options are easier to scan and understand.",
-        "Live Concurrent Source Search: Add-on searches now run in parallel with live incoming results, a real-time progress counter (X/Y finished · N found), and an instant cancel button.",
-        "Improved QRIS Payment Experience: Refined bank and e-wallet branding and added platform-aware actions (\"Save to Gallery\" on Android and \"Copy QR Code\" on Windows).",
-        "Consistent UI Corner Styling: Standardized corner rounding across text inputs, buttons, and segmented controls for a more cohesive look.",
-        "Protected User Add-ons Across Updates: Moved user-installed media source plugins out of the temporary streaming cache into dedicated persistent storage with automatic migration, preventing add-ons from disappearing across updates.",
-        "Seamless In-Place Android Updates: Switched production Android releases to a consistent app signature so future updates install directly over existing installations without requiring an uninstall.",
-        "Safer Windows Uninstaller: Scoped Windows cleanup to temporary streaming cache files so user-installed add-ons and preferences remain safe.",
-        "Complete Android Subtitle Font Support: Replaced the bundled Android subtitle fallback font with a broader Unicode typeface, eliminating missing-character boxes (tofu) on stylized subtitles."
+        "Subscription Checkout Details Card: Added a transaction summary card beneath the checkout QR view displaying your order reference, selected plan, tax breakdown, and service fee in a clean dark container.",
+        "Checkout Modal Polish: Refined spacing, typography hierarchy, and platform-specific action button alignment inside the checkout dialog.",
+        "Duration Selector Layout Shift: Fixed subscription duration buttons shifting width and reflowing when selected on the PRO screen.",
+        "Reliable Payment Confirmation: Improved automatic order verification so completed QRIS payments activate more consistently."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Setup-2026.11.5.exe",
-        "sha256": "4f4424a6df7f87a51e43860387a0f86f50d10b9d4e87559d964510e701eea6a5",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Windows-x64-2026.11.5.zip",
-        "portable_sha256": "cd119c5e7b879e4812d03f6ffba9c1ba8bf8a799f05b0efa406e2236ae119000"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Setup-2026.11.6.exe",
+        "sha256": "6a8c4499b91a61834f2e933a8376a9ec7c9e655d5cb055d0271e8011ecf73c47",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Windows-x64-2026.11.6.zip",
+        "portable_sha256": "74197dd004acaf3ac58414129dec17d0884fafa704ea2195db27aaed7df900e6"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
-        "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-arm64-v8a-2026.11.6.apk",
+        "sha256": "1373912ce6da072273a42cb8a56caf0724c49884c60780d28e8aee550094b381",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
-            "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-arm64-v8a-2026.11.6.apk",
+            "sha256": "1373912ce6da072273a42cb8a56caf0724c49884c60780d28e8aee550094b381"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-armeabi-v7a-2026.11.5.apk",
-            "sha256": "c0ffd40053fdf098fb9c5b31bff4f08a62b1d4a529f2c0a7493040541f186625"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-armeabi-v7a-2026.11.6.apk",
+            "sha256": "163af608c7854eae4a95e9b6565c054e013953ecfef3705dc83e34b7a0fa0bbd"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-x86_64-2026.11.5.apk",
-            "sha256": "76358e0f2d59b2e1d5614be937ce23f29cb52bc47aff7ef9ad15e8aed7890f48"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-x86_64-2026.11.6.apk",
+            "sha256": "3e7e85a21a7cb220160d08eb87d04cf40c6301934fcec99b9336cd1f36dcc02f"
           }
         }
       }
     },
     "beta": {
-      "version": "2026.11.5",
-      "build_number": 26111716,
-      "release_date": "2026-11-17",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.5",
+      "version": "2026.11.6",
+      "build_number": 26111800,
+      "release_date": "2026-11-18",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.6",
       "notes": [
-        "Streamlined Collapsible Settings: Redesigned the Settings screen with collapsible sections and category filters so options are easier to scan and understand.",
-        "Live Concurrent Source Search: Add-on searches now run in parallel with live incoming results, a real-time progress counter (X/Y finished · N found), and an instant cancel button.",
-        "Improved QRIS Payment Experience: Refined bank and e-wallet branding and added platform-aware actions (\"Save to Gallery\" on Android and \"Copy QR Code\" on Windows).",
-        "Consistent UI Corner Styling: Standardized corner rounding across text inputs, buttons, and segmented controls for a more cohesive look.",
-        "Protected User Add-ons Across Updates: Moved user-installed media source plugins out of the temporary streaming cache into dedicated persistent storage with automatic migration, preventing add-ons from disappearing across updates.",
-        "Seamless In-Place Android Updates: Switched production Android releases to a consistent app signature so future updates install directly over existing installations without requiring an uninstall.",
-        "Safer Windows Uninstaller: Scoped Windows cleanup to temporary streaming cache files so user-installed add-ons and preferences remain safe.",
-        "Complete Android Subtitle Font Support: Replaced the bundled Android subtitle fallback font with a broader Unicode typeface, eliminating missing-character boxes (tofu) on stylized subtitles."
+        "Subscription Checkout Details Card: Added a transaction summary card beneath the checkout QR view displaying your order reference, selected plan, tax breakdown, and service fee in a clean dark container.",
+        "Checkout Modal Polish: Refined spacing, typography hierarchy, and platform-specific action button alignment inside the checkout dialog.",
+        "Duration Selector Layout Shift: Fixed subscription duration buttons shifting width and reflowing when selected on the PRO screen.",
+        "Reliable Payment Confirmation: Improved automatic order verification so completed QRIS payments activate more consistently."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Setup-2026.11.5.exe",
-        "sha256": "4f4424a6df7f87a51e43860387a0f86f50d10b9d4e87559d964510e701eea6a5",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Windows-x64-2026.11.5.zip",
-        "portable_sha256": "cd119c5e7b879e4812d03f6ffba9c1ba8bf8a799f05b0efa406e2236ae119000"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Setup-2026.11.6.exe",
+        "sha256": "6a8c4499b91a61834f2e933a8376a9ec7c9e655d5cb055d0271e8011ecf73c47",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Windows-x64-2026.11.6.zip",
+        "portable_sha256": "74197dd004acaf3ac58414129dec17d0884fafa704ea2195db27aaed7df900e6"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
-        "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-arm64-v8a-2026.11.6.apk",
+        "sha256": "1373912ce6da072273a42cb8a56caf0724c49884c60780d28e8aee550094b381",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-arm64-v8a-2026.11.5.apk",
-            "sha256": "78c904c278328a14232b63cdaddab5cbe3ced99b61bf305bdfca00f16ca8d556"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-arm64-v8a-2026.11.6.apk",
+            "sha256": "1373912ce6da072273a42cb8a56caf0724c49884c60780d28e8aee550094b381"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-armeabi-v7a-2026.11.5.apk",
-            "sha256": "c0ffd40053fdf098fb9c5b31bff4f08a62b1d4a529f2c0a7493040541f186625"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-armeabi-v7a-2026.11.6.apk",
+            "sha256": "163af608c7854eae4a95e9b6565c054e013953ecfef3705dc83e34b7a0fa0bbd"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.5/Mizuki-Android-x86_64-2026.11.5.apk",
-            "sha256": "76358e0f2d59b2e1d5614be937ce23f29cb52bc47aff7ef9ad15e8aed7890f48"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-x86_64-2026.11.6.apk",
+            "sha256": "3e7e85a21a7cb220160d08eb87d04cf40c6301934fcec99b9336cd1f36dcc02f"
           }
         }
       }
