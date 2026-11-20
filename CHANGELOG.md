@@ -2,6 +2,27 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.7 (2026-11-20) - Stable
+
+Released: 2026-11-20 | Build: 26112006
+
+### Added
+- **More Ways to Stream:** Watch episodes from direct web streams, Usenet, standard torrents, or cloud services like Real-Debrid and TorBox (Gold)—all from a single source picker.
+- **Skip Intros & Outros (Bronze+):** Added a "Skip Opening / Ending" button on the video player with chapter markers on the timeline bar, plus an optional Auto-Skip switch in Settings.
+- **Watch Together with Friends:** Host a private Watch Party room (Bronze+) or join any friend's room for free with a 6-character code to keep playback in sync, complete with live chat and emoji reactions.
+- **Richer Episode Details:** Episode lists now show full episode titles, story summaries, air dates, runtimes, filler badges, and preview thumbnails in both Grid and Compact List views.
+- **Continue Watching & Mini-Player:** Added a "Continue Watching" section on the Discover tab to jump right back into unfinished episodes, plus a docked Mini-Player so you can browse the app without stopping your video.
+- **Ambient Video Lighting & Timeline Previews:** Added an Ambient Mode toggle that projects a soft glow around the video player, along with thumbnail previews when scrubbing across the timeline bar.
+- **Smarter Search Filters:** Filter anime by multiple genres and tags at once, alongside format, airing status, season, and release year on the Search screen.
+- **Linux Desktop Support (Source Build):** Added native Linux desktop window and system tray support matching the Windows experience for users building from source; prebuilt Linux packages will follow in a future release.
+
+### Changed & Improved
+- **Faster & More Stable App Engine:** Upgraded the core app framework for smoother animations, crisper menus, and better overall stability across Windows, Linux, and Android.
+
+### Fixed
+- **Smoother Direct Web Streaming:** Improved compatibility with direct video streams so multi-quality playlists, audio tracks, and subtitles load reliably without playback stalls.
+- **Automatic Stream Recovery:** The player now automatically retries when a stream server briefly hiccups or slows down, reducing unexpected buffering interruptions.
+
 ## v2026.11.6 (2026-11-18) - Stable
 
 Released: 2026-11-18 | Build: 26111800

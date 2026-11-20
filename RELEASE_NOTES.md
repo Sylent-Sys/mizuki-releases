@@ -1,35 +1,42 @@
-# Mizuki v2026.11.6 (Stable)
+# Mizuki v2026.11.7 (Stable)
 
-Released: 2026-11-18 | Build: 26111800
+Released: 2026-11-20 | Build: 26112006
 
 ## Added
-- **Subscription Checkout Details Card:** Added a transaction summary card beneath the checkout QR view displaying your order reference, selected plan, tax breakdown, and service fee in a clean dark container.
+- **More Ways to Stream:** Watch episodes from direct web streams, Usenet, standard torrents, or cloud services like Real-Debrid and TorBox (Gold)—all from a single source picker.
+- **Skip Intros & Outros (Bronze+):** Added a "Skip Opening / Ending" button on the video player with chapter markers on the timeline bar, plus an optional Auto-Skip switch in Settings.
+- **Watch Together with Friends:** Host a private Watch Party room (Bronze+) or join any friend's room for free with a 6-character code to keep playback in sync, complete with live chat and emoji reactions.
+- **Richer Episode Details:** Episode lists now show full episode titles, story summaries, air dates, runtimes, filler badges, and preview thumbnails in both Grid and Compact List views.
+- **Continue Watching & Mini-Player:** Added a "Continue Watching" section on the Discover tab to jump right back into unfinished episodes, plus a docked Mini-Player so you can browse the app without stopping your video.
+- **Ambient Video Lighting & Timeline Previews:** Added an Ambient Mode toggle that projects a soft glow around the video player, along with thumbnail previews when scrubbing across the timeline bar.
+- **Smarter Search Filters:** Filter anime by multiple genres and tags at once, alongside format, airing status, season, and release year on the Search screen.
+- **Linux Desktop Support (Source Build):** Added native Linux desktop window and system tray support matching the Windows experience for users building from source; prebuilt Linux packages will follow in a future release.
 
 ## Changed & Improved
-- **Checkout Modal Polish:** Refined spacing, typography hierarchy, and platform-specific action button alignment inside the checkout dialog.
+- **Faster & More Stable App Engine:** Upgraded the core app framework for smoother animations, crisper menus, and better overall stability across Windows, Linux, and Android.
 
 ## Fixed
-- **Duration Selector Layout Shift:** Fixed subscription duration buttons shifting width and reflowing when selected on the PRO screen.
-- **Reliable Payment Confirmation:** Improved automatic order verification so completed QRIS payments activate more consistently.
+- **Smoother Direct Web Streaming:** Improved compatibility with direct video streams so multi-quality playlists, audio tracks, and subtitles load reliably without playback stalls.
+- **Automatic Stream Recovery:** The player now automatically retries when a stream server briefly hiccups or slows down, reducing unexpected buffering interruptions.
 
 ---
 
 ## Downloads & SHA-256 Checksums
 
 ### Windows (64-bit)
-- **Installer:** [Mizuki-Setup-2026.11.6.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Setup-2026.11.6.exe) (~32.9 MB)
-  - `sha256: 6a8c4499b91a61834f2e933a8376a9ec7c9e655d5cb055d0271e8011ecf73c47`
-  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 6a8c4499b91a61834f2e933a8376a9ec7c9e655d5cb055d0271e8011ecf73c47`)
-- **Portable Archive:** [Mizuki-Windows-x64-2026.11.6.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Windows-x64-2026.11.6.zip) (~44.6 MB)
-  - `sha256: 74197dd004acaf3ac58414129dec17d0884fafa704ea2195db27aaed7df900e6`
+- **Installer:** [Mizuki-Setup-2026.11.7.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.7/Mizuki-Setup-2026.11.7.exe) (~32.7 MB)
+  - `sha256: c8a9b534087ff83272036e22d004062cbfac2285239d2f42c06fcec489a5210c`
+  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: c8a9b534087ff83272036e22d004062cbfac2285239d2f42c06fcec489a5210c`)
+- **Portable Archive:** [Mizuki-Windows-x64-2026.11.7.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.7/Mizuki-Windows-x64-2026.11.7.zip) (~44.5 MB)
+  - `sha256: f519d01b5d5d55bf8d8b164def47c37f225c1b5cc241d2971a5554536ca72c5f`
 
 ### Android (Split per ABI / Android 10+)
-- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.6.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-arm64-v8a-2026.11.6.apk) (~50.2 MB)
-  - `sha256: 1373912ce6da072273a42cb8a56caf0724c49884c60780d28e8aee550094b381`
-- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.6.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-armeabi-v7a-2026.11.6.apk) (~43.5 MB)
-  - `sha256: 163af608c7854eae4a95e9b6565c054e013953ecfef3705dc83e34b7a0fa0bbd`
-- **x86_64:** [Mizuki-Android-x86_64-2026.11.6.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.6/Mizuki-Android-x86_64-2026.11.6.apk) (~56 MB)
-  - `sha256: 3e7e85a21a7cb220160d08eb87d04cf40c6301934fcec99b9336cd1f36dcc02f`
+- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.7.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.7/Mizuki-Android-arm64-v8a-2026.11.7.apk) (~50.7 MB)
+  - `sha256: c8635e99760ec66d54f3c1a95d38646f2c9d73a2068df33b4e57126302d58ff4`
+- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.7.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.7/Mizuki-Android-armeabi-v7a-2026.11.7.apk) (~44.1 MB)
+  - `sha256: 0a0c2ca1e0e49533b7bf45cec2550721341874806430425f508537a388d9d1d8`
+- **x86_64:** [Mizuki-Android-x86_64-2026.11.7.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.7/Mizuki-Android-x86_64-2026.11.7.apk) (~56.5 MB)
+  - `sha256: b0134e54e78b77722ee618ffb2fd4eee29cad0e38d34e1d095bce6b491b68b45`
 
 ---
 
