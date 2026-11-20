@@ -2,6 +2,16 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.8 (2026-11-20) - Stable
+
+Released: 2026-11-20 | Build: 26112007
+
+## Fixed
+- **Android 16 Video Playback Stability:** Fixed a native player crash on Android 16 devices during video startup, background switching, and back navigation by switching Android hardware decoding to surface-safe mode and stopping playback cleanly before closing the player.
+- **Better Direct Web Stream Support:** Improved playback compatibility for web-embedded video links, including packed player pages, nested embeds, and malformed link parameters, while showing a clear error message if a host cannot be played directly.
+- **Prevented Direct Stream Dropouts:** Removed an overly short download timeout on proxied direct and cloud streams so long episodes play smoothly without cutting off after 15 seconds.
+- **Cleaner Player Buffering Indicator:** Hidden the buffering spinner when a playback error is shown and updated its label for direct and cloud streams.
+
 ## v2026.11.7 (2026-11-20) - Stable
 
 Released: 2026-11-20 | Build: 26112006
