@@ -2,6 +2,18 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.10 (2026-11-22) - Stable
+
+Released: 2026-11-22 | Build: 26112222
+
+### Changed & Improved
+- **Clearer Episode Progress Bars:** Increased episode watch progress bar height and track contrast across all four themes (Blackout, Whiteout, Catppuccin, Dracula) so partially watched episodes are easy to gauge at a glance.
+- **Cleaner In-App Update Notes:** Improved formatting inside the in-app update dialog so release note headings and highlights render cleanly.
+
+### Fixed
+- **False Progress Indicator on Episode Cards:** Fixed a decorative line below episode titles that made unwatched, completed, and upcoming episodes look partially watched. Progress bars now appear only on episodes actively in progress with a known duration.
+- **Incomplete Update Prompts:** Prevented the in-app updater from prompting to install an update before its downloadable package is ready.
+
 ## v2026.11.9 (2026-11-22) - Stable
 
 Released: 2026-11-22 | Build: 26112213
