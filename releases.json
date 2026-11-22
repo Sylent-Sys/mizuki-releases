@@ -1,73 +1,85 @@
 {
   "channels": {
     "stable": {
-      "version": "2026.11.8",
-      "build_number": 26112007,
-      "release_date": "2026-11-20",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.8",
+      "version": "2026.11.9",
+      "build_number": 26112213,
+      "release_date": "2026-11-22",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.9",
       "notes": [
-        "Android 16 Video Playback Stability: Fixed a video player crash on Android 16 devices during video startup, background switching, and back navigation by switching Android hardware decoding to surface-safe mode and stopping playback cleanly before closing the player.",
-        "Better Direct Web Stream Support: Improved playback compatibility for web-embedded video links, including packed player pages, nested embeds, and malformed link parameters, while showing a clear error message if a host cannot be played directly.",
-        "Prevented Direct Stream Dropouts: Removed an overly short download timeout on proxied direct and cloud streams so long episodes play smoothly without cutting off after 15 seconds.",
-        "Cleaner Player Buffering Indicator: Hid the buffering spinner when a playback error is shown and updated its status label for direct and cloud streams."
+        "Redesigned Adaptive Stream Source Picker: Replaced the compact source popup with an adaptive picker tailored to every screen size—a full-screen mobile view with a thumb-friendly bottom filter bar and slide-up Filter, Hosts, and Manual Link sheets, a spacious tablet dialog, and a dual-pane desktop layout with an independent sidebar.",
+        "Interactive Host Verification (WebView): Added an in-app Verify in WebView flow for content providers and direct video hosts that require interactive browser verification, automatically remembering site sessions across restarts, retrying your search or playback, and letting you clear site cookies per add-on in Extensions.",
+        "Adaptive Stream Stats HUD & Transfer Tracking: Updated the in-player Stats HUD (H) to show live streaming throughput, buffer-ahead duration, and real-time playback details (resolution, FPS, codecs, hardware decoder, dropped frames, and buffered cache) for Direct, HLS, and Debrid cloud streams, while also showing active non-torrent streams on the Transfers screen and navigation badge.",
+        "Richer Add-on Settings & External Subtitles: Add-on option dialogs now display native toggles, dropdown menus, number fields, and masked API key/token inputs, alongside automatic loading of external subtitle tracks from web content providers, full movie and batch source lookups, and authenticated stream playback.",
+        "Faster Seeking & Smoother Buffering: Pre-loads the start and end of torrent video files so timeline seeking responds immediately, prefetches upcoming video data ahead of playback, expands the player's seekable memory buffer (128 MB forward / 64 MB backward), and merges rapid step-seek taps (±5s / ±10s) into a single smooth jump with instant on-screen feedback.",
+        "Parallel Source Search & Faster Repository Installs: Source searches now run concurrently across all enabled add-ons and stream results into the picker as providers respond, with instant Stop cancellation when closing or refreshing, while multi-add-on repositories now install scripts in parallel.",
+        "Cleaner Source Rows & Last-Used Highlighting: Unified source cards across mobile and desktop with compact quality and origin badges, pinned Last used highlighting (including a fallback row when a cached source is not in the current results), and instant Direct Magnet Detected quick-stream when pasting a magnet link into the filter box.",
+        "Mobile Stream Picker Layout & Overflows: Fixed cramped source lists and layout overflows on narrow mobile screens when resume bars, cached sources, and host verification prompts appeared together, ensuring safe-area padding, keyboard-aware bottom controls, and clean contrast across all four themes (Blackout, Whiteout, Catppuccin, Dracula).",
+        "Direct & Cloud Stream Telemetry: Fixed Direct HTTP, HLS, and Debrid streams showing placeholder 0 B/s speeds, 0 peers, or 100% (Seed) status in the Stats HUD, Transfers screen, and Android foreground notifications.",
+        "Search Cancellation & Picker Cleanup: Fixed lingering background search activity after cancellation or errors and improved cleanup when closing and reopening the manual link sheet."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Setup-2026.11.8.exe",
-        "sha256": "17f8f8fa25088ac7d76d3ff49aa291c9a73a63dd3e9fb21aa93a3abb24fd2bfe",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Windows-x64-2026.11.8.zip",
-        "portable_sha256": "f13d09d35d0b035f6de206e9e4879aab34201f0fff995c11ca9c86ad5bbbb554"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Setup-2026.11.9.exe",
+        "sha256": "004c9c1135cca69d09ecc2e38b7309014d1a674e67b7cb06a6f55089137c968a",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Windows-x64-2026.11.9.zip",
+        "portable_sha256": "f205fab221353c1bedea03502ff7ce51953c646ba9990b2e2853d7665a00635e"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-arm64-v8a-2026.11.8.apk",
-        "sha256": "3daa5c0f7d35462d6509b3440590273c1e885a762ce52abfc1934af1ef02580a",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-arm64-v8a-2026.11.9.apk",
+        "sha256": "1e0d0ec07fa63e3892fcf950b8de6ef33e96fb573636adb518475f91e1973399",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-arm64-v8a-2026.11.8.apk",
-            "sha256": "3daa5c0f7d35462d6509b3440590273c1e885a762ce52abfc1934af1ef02580a"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-arm64-v8a-2026.11.9.apk",
+            "sha256": "1e0d0ec07fa63e3892fcf950b8de6ef33e96fb573636adb518475f91e1973399"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-armeabi-v7a-2026.11.8.apk",
-            "sha256": "53ccb680771273d8ec30c01f66ce4d63b51d331ed18b31d498857e107918b36e"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-armeabi-v7a-2026.11.9.apk",
+            "sha256": "870d2132a765cd2096df03cf4b139cb81da5d67ee8c6b2e65df81524c54cce1e"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-x86_64-2026.11.8.apk",
-            "sha256": "1b9287621186a367e45faad3214e797577d77b36dbd21e2a3ea157a92b0d0659"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-x86_64-2026.11.9.apk",
+            "sha256": "870795c7e1669ce351769281fca32b26b7dabad8ac72e468a758a572f7395ffb"
           }
         }
       }
     },
     "beta": {
-      "version": "2026.11.8",
-      "build_number": 26112007,
-      "release_date": "2026-11-20",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.8",
+      "version": "2026.11.9",
+      "build_number": 26112213,
+      "release_date": "2026-11-22",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.9",
       "notes": [
-        "Android 16 Video Playback Stability: Fixed a video player crash on Android 16 devices during video startup, background switching, and back navigation by switching Android hardware decoding to surface-safe mode and stopping playback cleanly before closing the player.",
-        "Better Direct Web Stream Support: Improved playback compatibility for web-embedded video links, including packed player pages, nested embeds, and malformed link parameters, while showing a clear error message if a host cannot be played directly.",
-        "Prevented Direct Stream Dropouts: Removed an overly short download timeout on proxied direct and cloud streams so long episodes play smoothly without cutting off after 15 seconds.",
-        "Cleaner Player Buffering Indicator: Hid the buffering spinner when a playback error is shown and updated its status label for direct and cloud streams."
+        "Redesigned Adaptive Stream Source Picker: Replaced the compact source popup with an adaptive picker tailored to every screen size—a full-screen mobile view with a thumb-friendly bottom filter bar and slide-up Filter, Hosts, and Manual Link sheets, a spacious tablet dialog, and a dual-pane desktop layout with an independent sidebar.",
+        "Interactive Host Verification (WebView): Added an in-app Verify in WebView flow for content providers and direct video hosts that require interactive browser verification, automatically remembering site sessions across restarts, retrying your search or playback, and letting you clear site cookies per add-on in Extensions.",
+        "Adaptive Stream Stats HUD & Transfer Tracking: Updated the in-player Stats HUD (H) to show live streaming throughput, buffer-ahead duration, and real-time playback details (resolution, FPS, codecs, hardware decoder, dropped frames, and buffered cache) for Direct, HLS, and Debrid cloud streams, while also showing active non-torrent streams on the Transfers screen and navigation badge.",
+        "Richer Add-on Settings & External Subtitles: Add-on option dialogs now display native toggles, dropdown menus, number fields, and masked API key/token inputs, alongside automatic loading of external subtitle tracks from web content providers, full movie and batch source lookups, and authenticated stream playback.",
+        "Faster Seeking & Smoother Buffering: Pre-loads the start and end of torrent video files so timeline seeking responds immediately, prefetches upcoming video data ahead of playback, expands the player's seekable memory buffer (128 MB forward / 64 MB backward), and merges rapid step-seek taps (±5s / ±10s) into a single smooth jump with instant on-screen feedback.",
+        "Parallel Source Search & Faster Repository Installs: Source searches now run concurrently across all enabled add-ons and stream results into the picker as providers respond, with instant Stop cancellation when closing or refreshing, while multi-add-on repositories now install scripts in parallel.",
+        "Cleaner Source Rows & Last-Used Highlighting: Unified source cards across mobile and desktop with compact quality and origin badges, pinned Last used highlighting (including a fallback row when a cached source is not in the current results), and instant Direct Magnet Detected quick-stream when pasting a magnet link into the filter box.",
+        "Mobile Stream Picker Layout & Overflows: Fixed cramped source lists and layout overflows on narrow mobile screens when resume bars, cached sources, and host verification prompts appeared together, ensuring safe-area padding, keyboard-aware bottom controls, and clean contrast across all four themes (Blackout, Whiteout, Catppuccin, Dracula).",
+        "Direct & Cloud Stream Telemetry: Fixed Direct HTTP, HLS, and Debrid streams showing placeholder 0 B/s speeds, 0 peers, or 100% (Seed) status in the Stats HUD, Transfers screen, and Android foreground notifications.",
+        "Search Cancellation & Picker Cleanup: Fixed lingering background search activity after cancellation or errors and improved cleanup when closing and reopening the manual link sheet."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Setup-2026.11.8.exe",
-        "sha256": "17f8f8fa25088ac7d76d3ff49aa291c9a73a63dd3e9fb21aa93a3abb24fd2bfe",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Windows-x64-2026.11.8.zip",
-        "portable_sha256": "f13d09d35d0b035f6de206e9e4879aab34201f0fff995c11ca9c86ad5bbbb554"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Setup-2026.11.9.exe",
+        "sha256": "004c9c1135cca69d09ecc2e38b7309014d1a674e67b7cb06a6f55089137c968a",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Windows-x64-2026.11.9.zip",
+        "portable_sha256": "f205fab221353c1bedea03502ff7ce51953c646ba9990b2e2853d7665a00635e"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-arm64-v8a-2026.11.8.apk",
-        "sha256": "3daa5c0f7d35462d6509b3440590273c1e885a762ce52abfc1934af1ef02580a",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-arm64-v8a-2026.11.9.apk",
+        "sha256": "1e0d0ec07fa63e3892fcf950b8de6ef33e96fb573636adb518475f91e1973399",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-arm64-v8a-2026.11.8.apk",
-            "sha256": "3daa5c0f7d35462d6509b3440590273c1e885a762ce52abfc1934af1ef02580a"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-arm64-v8a-2026.11.9.apk",
+            "sha256": "1e0d0ec07fa63e3892fcf950b8de6ef33e96fb573636adb518475f91e1973399"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-armeabi-v7a-2026.11.8.apk",
-            "sha256": "53ccb680771273d8ec30c01f66ce4d63b51d331ed18b31d498857e107918b36e"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-armeabi-v7a-2026.11.9.apk",
+            "sha256": "870d2132a765cd2096df03cf4b139cb81da5d67ee8c6b2e65df81524c54cce1e"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.8/Mizuki-Android-x86_64-2026.11.8.apk",
-            "sha256": "1b9287621186a367e45faad3214e797577d77b36dbd21e2a3ea157a92b0d0659"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.9/Mizuki-Android-x86_64-2026.11.9.apk",
+            "sha256": "870795c7e1669ce351769281fca32b26b7dabad8ac72e468a758a572f7395ffb"
           }
         }
       }

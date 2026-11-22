@@ -2,6 +2,26 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.9 (2026-11-22) - Stable
+
+Released: 2026-11-22 | Build: 26112213
+
+### Added
+- **Redesigned Adaptive Stream Source Picker:** Replaced the compact source popup with an adaptive picker tailored to every screen size—a full-screen mobile view with a thumb-friendly bottom filter bar and slide-up Filter, Hosts, and Manual Link sheets, a spacious tablet dialog, and a dual-pane desktop layout with an independent sidebar.
+- **Interactive Host Verification (WebView):** Added an in-app **Verify in WebView** flow for content providers and direct video hosts that require interactive browser verification, automatically remembering site sessions across restarts, retrying your search or playback, and letting you clear site cookies per add-on in Extensions.
+- **Adaptive Stream Stats HUD & Transfer Tracking:** Updated the in-player Stats HUD (`H`) to show live streaming throughput, buffer-ahead duration, and real-time playback details (resolution, FPS, codecs, hardware decoder, dropped frames, and buffered cache) for Direct, HLS, and Debrid cloud streams, while also showing active non-torrent streams on the Transfers screen and navigation badge.
+- **Richer Add-on Settings & External Subtitles:** Add-on option dialogs now display native toggles, dropdown menus, number fields, and masked API key/token inputs, alongside automatic loading of external subtitle tracks from web content providers, full movie and batch source lookups, and authenticated stream playback.
+
+### Changed & Improved
+- **Faster Seeking & Smoother Buffering:** Pre-loads the start and end of torrent video files so timeline seeking responds immediately, prefetches upcoming video data ahead of playback, expands the player's seekable memory buffer (128 MB forward / 64 MB backward), and merges rapid step-seek taps (`±5s` / `±10s`) into a single smooth jump with instant on-screen feedback.
+- **Parallel Source Search & Faster Repository Installs:** Source searches now run concurrently across all enabled add-ons and stream results into the picker as providers respond, with instant **Stop** cancellation when closing or refreshing, while multi-add-on repositories now install scripts in parallel.
+- **Cleaner Source Rows & Last-Used Highlighting:** Unified source cards across mobile and desktop with compact quality and origin badges, pinned **Last used** highlighting (including a fallback row when a cached source is not in the current results), and instant **Direct Magnet Detected** quick-stream when pasting a magnet link into the filter box.
+
+### Fixed
+- **Mobile Stream Picker Layout & Overflows:** Fixed cramped source lists and layout overflows on narrow mobile screens when resume bars, cached sources, and host verification prompts appeared together, ensuring safe-area padding, keyboard-aware bottom controls, and clean contrast across all four themes (Blackout, Whiteout, Catppuccin, Dracula).
+- **Direct & Cloud Stream Telemetry:** Fixed Direct HTTP, HLS, and Debrid streams showing placeholder `0 B/s` speeds, `0 peers`, or `100% (Seed)` status in the Stats HUD, Transfers screen, and Android foreground notifications.
+- **Search Cancellation & Picker Cleanup:** Fixed lingering background search activity after cancellation or errors and improved cleanup when closing and reopening the manual link sheet.
+
 ## v2026.11.8 (2026-11-20) - Stable
 
 Released: 2026-11-20 | Build: 26112007
