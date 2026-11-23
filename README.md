@@ -19,4 +19,4 @@ Mizuki automatically checks for updates via `releases.json` hosted in this repos
 
 ## Legal & Compliance Notice
 
-Mizuki is an open-source, neutral media player and BitTorrent client. It does not host, provide, index, or distribute any copyrighted media content or torrent metadata out of the box. Users are solely responsible for the content they choose to stream or download.
+Mizuki is a free-to-use, neutral media player and BitTorrent client. It does not host, provide, index, or distribute any copyrighted media content or torrent metadata out of the box. Users are solely responsible for the content they choose to stream or download.
