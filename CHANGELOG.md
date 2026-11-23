@@ -2,6 +2,20 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.11 (2026-11-23) - Stable
+
+Released: 2026-11-23 | Build: 26112317
+
+### Changed & Improved
+- **Instant Watch Together Media Sharing:** Creating a Watch Together room while a video is already playing—including direct magnet links or stream URLs—now immediately shares the active video and current timestamp with the room.
+- **Automatic Sync for Late-Joining Friends:** Friends who join an active Watch Together room after playback has started now automatically load the host's video and sync straight to the current timestamp.
+- **Stronger Watch Together Room Protection:** Watch Together rooms now use longer, harder-to-guess room codes, verify Bronze Pass or higher status when hosting, enforce host-only playback and media controls, and protect room chat against sender impersonation or flooding.
+- **Seamless Supporter Pass Continuity:** Prepared supporter pass verification for upcoming security updates so active passes keep working smoothly across Windows and Android without interruption.
+
+### Fixed
+- **Watch Together Connection Feedback:** Removed an unresponsive fallback connection state so joining an invalid, expired, or unreachable room now immediately shows a clear status message instead of appearing connected.
+- **Consistent Fonts in Settings Inputs:** Fixed text fields and dropdown selectors in Settings so they properly match your selected app theme font.
+
 ## v2026.11.10 (2026-11-22) - Stable
 
 Released: 2026-11-22 | Build: 26112222
