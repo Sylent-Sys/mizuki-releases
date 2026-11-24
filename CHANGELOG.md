@@ -2,6 +2,23 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.13 (2026-11-25) - Stable
+
+Released: 2026-11-25 | Build: 26112506
+
+### Added
+- **Expanded Media Add-On Compatibility:** Custom add-ons now support subtitle add-ons, HTTP webseed accelerators, Usenet (NZB) sources with optional NNTP server settings, compact repository shortcuts (`gh:` and `npm:`), and parallel episode and seasonal pack discovery.
+- **Extension Diagnostics & Update Checker:** Added one-click **Test**, **Test All**, and **Check Updates** controls on the Extensions screen with live online status, response times, diagnostic logs, automatic startup update checks, and compatibility notices.
+- **Faster Source Discovery & Live Peer Counts:** Added optional live BitTorrent tracker peer refresh in Network Settings so source lists display current seeder and leecher counts, plus on-demand stream resolution for faster episode searches.
+
+### Changed & Improved
+- **Smarter Episode Matching & Source Ranking:** Episode lookups now use richer cross-catalog metadata and absolute episode numbers, highlight recommended and seasonal releases more clearly, show multi-source attribution when several add-ons list the same release, and support `.ico` add-on icons.
+- **Better Multi-Theme Contrast & Touch Targets:** Improved text and badge readability across Whiteout, Catppuccin, and Dracula themes and enlarged extension card buttons for easier tapping on touchscreens.
+- **Improved Cloud Streaming for Torrent Links:** Torrent file links returned by add-ons can now resolve through enabled Debrid cloud services without falling back to peer-to-peer downloads.
+
+### Fixed
+- **Missing Add-On Session Verification Shortcut:** Add-ons that require browser-style host verification now display a direct **Verify Session** button on their card and prefill the host URL automatically.
+
 ## v2026.11.12 (2026-11-24) - Stable
 
 Released: 2026-11-24 | Build: 26112407
