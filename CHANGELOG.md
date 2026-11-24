@@ -12,11 +12,9 @@ Released: 2026-11-24 | Build: 26112407
 
 ### Changed & Improved
 - **Cleaner Upcoming Episode Cards & Accurate Numbering:** Upcoming episodes without preview artwork now use a clean, compact card layout without empty placeholder boxes, and mid-season recaps or specials automatically align by air date so episode titles and previews stay matched.
-- **Clearer Supporter Device Names & Tier Details:** Active supporter device lists now show friendly PC and phone model names instead of generic identifiers, alongside clearer tier feature summaries and a dedicated Watch Together hosting status indicator.
 
 ### Fixed
 - **Missing Thumbnails & Release Dates on Newly Airing Shows:** Fixed anime detail pages showing blank episode cards with missing titles, thumbnails, and release dates when primary catalog mappings were incomplete.
-- **Persistent Android Supporter Device Recognition:** Fixed reinstalling the app on Android so your existing device slot is preserved automatically without consuming extra multi-device quota.
 
 ## v2026.11.11 (2026-11-23) - Stable
 
