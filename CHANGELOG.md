@@ -2,6 +2,14 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.14 (2026-11-25) - Stable
+
+Released: 2026-11-25 | Build: 26112513
+
+### Fixed
+- **AniList Sign-In on Android:** Fixed an issue where tapping **Connect AniList** on Android could fail to start sign-in after updating or signing out.
+- **Clearer Account Sign-In Notices:** Improved account sign-in error messages in Settings so they are easier to understand.
+
 ## v2026.11.13 (2026-11-25) - Stable
 
 Released: 2026-11-25 | Build: 26112506
