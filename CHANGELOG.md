@@ -2,6 +2,25 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.15 (2026-11-27) - Stable
+
+Released: 2026-11-27 | Build: 26112706
+
+### Added
+- **Automatic Update Notifications:** Mizuki can now check for updates in the background on Windows and Android, show native system notifications and a Settings indicator when a new version is ready, and let you toggle automatic checks in Settings.
+- **Playback Diagnostics Log Export:** Added options in Settings to export or clear local playback logs when troubleshooting streaming issues.
+- **Quick Source Failover Prompt:** When a stream fails repeatedly during playback, the player now offers a one-tap prompt to switch to another source while keeping your current playback position.
+
+### Changed & Improved
+- **More Resilient Stream Playback:** Direct streams now automatically recover from brief network drops, retry incomplete video chunks, and maintain smoother audio synchronization.
+- **Faster Host Verification in Source Picker:** Completing host verification for one content provider now refreshes only that provider and keeps results already loaded from other providers instead of reloading every source.
+- **Smoother In-App Host Verification:** Opening host verification now loads the site's main page instead of raw data pages, automatically completes once verification succeeds, and warns you if you confirm before the check has finished.
+
+### Fixed
+- **Windows Host Verification Sessions:** Fixed an issue on Windows where verified browser sessions could fail to save or match the verified host, preventing repeated verification prompts.
+- **Expired & Incomplete Verification Sessions:** Fixed loops caused by saved empty or expired host sessions so expired sessions reliably prompt for re-verification instead of returning empty results.
+- **Player Overlay & Cursor Auto-Hide:** Fixed playback controls and the mouse cursor staying visible after playback starts, when moving the cursor out of the window, or when switching to another app.
+
 ## v2026.11.14 (2026-11-25) - Stable
 
 Released: 2026-11-25 | Build: 26112513
