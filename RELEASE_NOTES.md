@@ -1,40 +1,29 @@
-# Mizuki v2026.11.15 (Stable)
+# Mizuki v2026.11.16 (Stable)
 
-Released: 2026-11-27 | Build: 26112706
-
-## Added
-- **Automatic Update Notifications:** Mizuki can now check for updates in the background on Windows and Android, show native system notifications and a Settings indicator when a new version is ready, and let you toggle automatic checks in Settings.
-- **Playback Diagnostics Log Export:** Added options in Settings to export or clear local playback logs when troubleshooting streaming issues.
-- **Quick Source Failover Prompt:** When a stream fails repeatedly during playback, the player now offers a one-tap prompt to switch to another source while keeping your current playback position.
-
-## Changed & Improved
-- **More Resilient Stream Playback:** Direct streams now automatically recover from brief network drops, retry incomplete video chunks, and maintain smoother audio synchronization.
-- **Faster Host Verification in Source Picker:** Completing host verification for one content provider now refreshes only that provider and keeps results already loaded from other providers instead of reloading every source.
-- **Smoother In-App Host Verification:** Opening host verification now loads the site's main page instead of raw data pages, automatically completes once verification succeeds, and warns you if you confirm before the check has finished.
+Released: 2026-11-28 | Build: 26112808
 
 ## Fixed
-- **Windows Host Verification Sessions:** Fixed an issue on Windows where verified browser sessions could fail to save or match the verified host, preventing repeated verification prompts.
-- **Expired & Incomplete Verification Sessions:** Fixed loops caused by saved empty or expired host sessions so expired sessions reliably prompt for re-verification instead of returning empty results.
-- **Player Overlay & Cursor Auto-Hide:** Fixed playback controls and the mouse cursor staying visible after playback starts, when moving the cursor out of the window, or when switching to another app.
+- **Android App Startup Crash:** Fixed an issue in the Android release build that caused Mizuki to crash immediately on launch after updating.
+- **Android Background Update Checks:** Fixed an issue in Android release builds that could prevent scheduled background update checks and notifications from running reliably.
 
 ---
 
 ## Downloads & SHA-256 Checksums
 
 ### Windows (64-bit)
-- **Installer:** [Mizuki-Setup-2026.11.15.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Setup-2026.11.15.exe) (~33.2 MB)
-  - `sha256: 1cf892d593196306935747d6d19c255c399b3c089cd251762b0293b021c1efb4`
-  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 1cf892d593196306935747d6d19c255c399b3c089cd251762b0293b021c1efb4`)
-- **Portable Archive:** [Mizuki-Windows-x64-2026.11.15.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Windows-x64-2026.11.15.zip) (~45.6 MB)
-  - `sha256: ad2d0eb0cc716a70363b87642323a8e3545d41c1dc2d2ba5c2ab0097fff8bd81`
+- **Installer:** [Mizuki-Setup-2026.11.16.exe](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Setup-2026.11.16.exe) (~33.2 MB)
+  - `sha256: 0c172f8f8a85b8819af05bafc12d9c3eaab6a0994775f8675b4b560e2f0ad83b`
+  - Unversioned alias: `Mizuki-Setup-x64.exe` (`sha256: 0c172f8f8a85b8819af05bafc12d9c3eaab6a0994775f8675b4b560e2f0ad83b`)
+- **Portable Archive:** [Mizuki-Windows-x64-2026.11.16.zip](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Windows-x64-2026.11.16.zip) (~45.6 MB)
+  - `sha256: 5a37cfa976299ad81bf509f862be7cb7041420298dcfcef7c7ce06f9c09a07f0`
 
 ### Android (Split per ABI / Android 10+)
-- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.15.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-arm64-v8a-2026.11.15.apk) (~53.1 MB)
-  - `sha256: c460f8094b1058041fee9323a5ff80f19f3090b6f8c5fcddd882b5e1600d8f72`
-- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.15.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-armeabi-v7a-2026.11.15.apk) (~46 MB)
-  - `sha256: 793955a1bda207670f18e2b33be6fd5357a3377fb3470fd060d88f1e531f404b`
-- **x86_64:** [Mizuki-Android-x86_64-2026.11.15.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-x86_64-2026.11.15.apk) (~59.2 MB)
-  - `sha256: 72470bb9d5e48face5096669403cdff2c29b26b75baed31aba574830129abe9b`
+- **arm64-v8a:** [Mizuki-Android-arm64-v8a-2026.11.16.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-arm64-v8a-2026.11.16.apk) (~53.2 MB)
+  - `sha256: 35a648f4d264e50c6bc81bbc9c9f3e92a9b8b09d87a627131e46aa3e47007e94`
+- **armeabi-v7a:** [Mizuki-Android-armeabi-v7a-2026.11.16.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-armeabi-v7a-2026.11.16.apk) (~46.1 MB)
+  - `sha256: f58c5fb0b530fbd385e0916b17e304a44ecbb1eadcd47a1c1bd66f851e5ae600`
+- **x86_64:** [Mizuki-Android-x86_64-2026.11.16.apk](https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-x86_64-2026.11.16.apk) (~59.3 MB)
+  - `sha256: 9286bad54399e2c6d8ad1f2cf5f06e50a27d5d6670d4f02f6696a299090f52fc`
 
 ---
 

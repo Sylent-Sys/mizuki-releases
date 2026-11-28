@@ -2,6 +2,14 @@
 
 All notable user-facing changes to Mizuki will be documented in this file.
 
+## v2026.11.16 (2026-11-28) - Stable
+
+Released: 2026-11-28 | Build: 26112808
+
+### Fixed
+- **Android App Startup Crash:** Fixed an issue in the Android release build that caused Mizuki to crash immediately on launch after updating.
+- **Android Background Update Checks:** Fixed an issue in Android release builds that could prevent scheduled background update checks and notifications from running reliably.
+
 ## v2026.11.15 (2026-11-27) - Stable
 
 Released: 2026-11-27 | Build: 26112706

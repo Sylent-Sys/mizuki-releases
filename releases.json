@@ -1,83 +1,69 @@
 {
   "channels": {
     "stable": {
-      "version": "2026.11.15",
-      "build_number": 26112706,
-      "release_date": "2026-11-27",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.15",
+      "version": "2026.11.16",
+      "build_number": 26112808,
+      "release_date": "2026-11-28",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.16",
       "notes": [
-        "Automatic Update Notifications: Mizuki can now check for updates in the background on Windows and Android, show native system notifications and a Settings indicator when a new version is ready, and let you toggle automatic checks in Settings.",
-        "Playback Diagnostics Log Export: Added options in Settings to export or clear local playback logs when troubleshooting streaming issues.",
-        "Quick Source Failover Prompt: When a stream fails repeatedly during playback, the player now offers a one-tap prompt to switch to another source while keeping your current playback position.",
-        "More Resilient Stream Playback: Direct streams now automatically recover from brief network drops, retry incomplete video chunks, and maintain smoother audio synchronization.",
-        "Faster Host Verification in Source Picker: Completing host verification for one content provider now refreshes only that provider and keeps results already loaded from other providers instead of reloading every source.",
-        "Smoother In-App Host Verification: Opening host verification now loads the site's main page instead of raw data pages, automatically completes once verification succeeds, and warns you if you confirm before the check has finished.",
-        "Windows Host Verification Sessions: Fixed an issue on Windows where verified browser sessions could fail to save or match the verified host, preventing repeated verification prompts.",
-        "Expired & Incomplete Verification Sessions: Fixed loops caused by saved empty or expired host sessions so expired sessions reliably prompt for re-verification instead of returning empty results.",
-        "Player Overlay & Cursor Auto-Hide: Fixed playback controls and the mouse cursor staying visible after playback starts, when moving the cursor out of the window, or when switching to another app."
+        "Android App Startup Crash: Fixed an issue in the Android release build that caused Mizuki to crash immediately on launch after updating.",
+        "Android Background Update Checks: Fixed an issue in Android release builds that could prevent scheduled background update checks and notifications from running reliably."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Setup-2026.11.15.exe",
-        "sha256": "1cf892d593196306935747d6d19c255c399b3c089cd251762b0293b021c1efb4",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Windows-x64-2026.11.15.zip",
-        "portable_sha256": "ad2d0eb0cc716a70363b87642323a8e3545d41c1dc2d2ba5c2ab0097fff8bd81"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Setup-2026.11.16.exe",
+        "sha256": "0c172f8f8a85b8819af05bafc12d9c3eaab6a0994775f8675b4b560e2f0ad83b",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Windows-x64-2026.11.16.zip",
+        "portable_sha256": "5a37cfa976299ad81bf509f862be7cb7041420298dcfcef7c7ce06f9c09a07f0"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-arm64-v8a-2026.11.15.apk",
-        "sha256": "c460f8094b1058041fee9323a5ff80f19f3090b6f8c5fcddd882b5e1600d8f72",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-arm64-v8a-2026.11.16.apk",
+        "sha256": "35a648f4d264e50c6bc81bbc9c9f3e92a9b8b09d87a627131e46aa3e47007e94",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-arm64-v8a-2026.11.15.apk",
-            "sha256": "c460f8094b1058041fee9323a5ff80f19f3090b6f8c5fcddd882b5e1600d8f72"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-arm64-v8a-2026.11.16.apk",
+            "sha256": "35a648f4d264e50c6bc81bbc9c9f3e92a9b8b09d87a627131e46aa3e47007e94"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-armeabi-v7a-2026.11.15.apk",
-            "sha256": "793955a1bda207670f18e2b33be6fd5357a3377fb3470fd060d88f1e531f404b"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-armeabi-v7a-2026.11.16.apk",
+            "sha256": "f58c5fb0b530fbd385e0916b17e304a44ecbb1eadcd47a1c1bd66f851e5ae600"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-x86_64-2026.11.15.apk",
-            "sha256": "72470bb9d5e48face5096669403cdff2c29b26b75baed31aba574830129abe9b"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-x86_64-2026.11.16.apk",
+            "sha256": "9286bad54399e2c6d8ad1f2cf5f06e50a27d5d6670d4f02f6696a299090f52fc"
           }
         }
       }
     },
     "beta": {
-      "version": "2026.11.15",
-      "build_number": 26112706,
-      "release_date": "2026-11-27",
-      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.15",
+      "version": "2026.11.16",
+      "build_number": 26112808,
+      "release_date": "2026-11-28",
+      "changelog_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/tag/v2026.11.16",
       "notes": [
-        "Automatic Update Notifications: Mizuki can now check for updates in the background on Windows and Android, show native system notifications and a Settings indicator when a new version is ready, and let you toggle automatic checks in Settings.",
-        "Playback Diagnostics Log Export: Added options in Settings to export or clear local playback logs when troubleshooting streaming issues.",
-        "Quick Source Failover Prompt: When a stream fails repeatedly during playback, the player now offers a one-tap prompt to switch to another source while keeping your current playback position.",
-        "More Resilient Stream Playback: Direct streams now automatically recover from brief network drops, retry incomplete video chunks, and maintain smoother audio synchronization.",
-        "Faster Host Verification in Source Picker: Completing host verification for one content provider now refreshes only that provider and keeps results already loaded from other providers instead of reloading every source.",
-        "Smoother In-App Host Verification: Opening host verification now loads the site's main page instead of raw data pages, automatically completes once verification succeeds, and warns you if you confirm before the check has finished.",
-        "Windows Host Verification Sessions: Fixed an issue on Windows where verified browser sessions could fail to save or match the verified host, preventing repeated verification prompts.",
-        "Expired & Incomplete Verification Sessions: Fixed loops caused by saved empty or expired host sessions so expired sessions reliably prompt for re-verification instead of returning empty results.",
-        "Player Overlay & Cursor Auto-Hide: Fixed playback controls and the mouse cursor staying visible after playback starts, when moving the cursor out of the window, or when switching to another app."
+        "Android App Startup Crash: Fixed an issue in the Android release build that caused Mizuki to crash immediately on launch after updating.",
+        "Android Background Update Checks: Fixed an issue in Android release builds that could prevent scheduled background update checks and notifications from running reliably."
       ],
       "windows": {
-        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Setup-2026.11.15.exe",
-        "sha256": "1cf892d593196306935747d6d19c255c399b3c089cd251762b0293b021c1efb4",
-        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Windows-x64-2026.11.15.zip",
-        "portable_sha256": "ad2d0eb0cc716a70363b87642323a8e3545d41c1dc2d2ba5c2ab0097fff8bd81"
+        "installer_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Setup-2026.11.16.exe",
+        "sha256": "0c172f8f8a85b8819af05bafc12d9c3eaab6a0994775f8675b4b560e2f0ad83b",
+        "portable_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Windows-x64-2026.11.16.zip",
+        "portable_sha256": "5a37cfa976299ad81bf509f862be7cb7041420298dcfcef7c7ce06f9c09a07f0"
       },
       "android": {
-        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-arm64-v8a-2026.11.15.apk",
-        "sha256": "c460f8094b1058041fee9323a5ff80f19f3090b6f8c5fcddd882b5e1600d8f72",
+        "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-arm64-v8a-2026.11.16.apk",
+        "sha256": "35a648f4d264e50c6bc81bbc9c9f3e92a9b8b09d87a627131e46aa3e47007e94",
         "abis": {
           "arm64-v8a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-arm64-v8a-2026.11.15.apk",
-            "sha256": "c460f8094b1058041fee9323a5ff80f19f3090b6f8c5fcddd882b5e1600d8f72"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-arm64-v8a-2026.11.16.apk",
+            "sha256": "35a648f4d264e50c6bc81bbc9c9f3e92a9b8b09d87a627131e46aa3e47007e94"
           },
           "armeabi-v7a": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-armeabi-v7a-2026.11.15.apk",
-            "sha256": "793955a1bda207670f18e2b33be6fd5357a3377fb3470fd060d88f1e531f404b"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-armeabi-v7a-2026.11.16.apk",
+            "sha256": "f58c5fb0b530fbd385e0916b17e304a44ecbb1eadcd47a1c1bd66f851e5ae600"
           },
           "x86_64": {
-            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.15/Mizuki-Android-x86_64-2026.11.15.apk",
-            "sha256": "72470bb9d5e48face5096669403cdff2c29b26b75baed31aba574830129abe9b"
+            "apk_url": "https://github.com/Sylent-Sys/mizuki-releases/releases/download/v2026.11.16/Mizuki-Android-x86_64-2026.11.16.apk",
+            "sha256": "9286bad54399e2c6d8ad1f2cf5f06e50a27d5d6670d4f02f6696a299090f52fc"
           }
         }
       }
